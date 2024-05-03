@@ -1,0 +1,19 @@
+.explore{
+    @apply transition-shadow font-bellefair hover:shadow-[0px_0px_0px_45px_#ffffff82] ease-in-out duration-200 text-center flex rounded-[50%] text-dark-blue md:text-[2rem] bg-white justify-center items-center md:w-[274px] md:h-[274px] sm:h-[242px] sm:w-[242px] h-[150px] w-[150px] 
+}
+.destination-btn{
+    @apply  text-[14px] sm:text-[16px] cursor-pointer border-b-[.1rem] transition-colors hover:border-[#d0d6f962] pb-[.2rem]
+}
+.distance-travel {
+    @apply flex flex-col gap-[.6rem]
+
+}
+.distance-travel> span:nth-child(1){
+    @apply text-[.6rem] sm:text-[.8rem]
+}
+.distance-travel> span:nth-child(2){
+    @apply text-[28px] sm:text-[28px]
+}
+.building-outline{
+    @apply outline outline-1 outline-red-600
+}

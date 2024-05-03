@@ -1,0 +1,35 @@
+<div className='flex place-content-center   flex-col'>
+
+{/* numbers and note */}
+<div className='  flex flex-col  md:ml-[15rem] gap-4 ' >
+  <div className='flex flex-col md:flex-row  gap-[4rem] p-4 md:p-2'>
+    <div className= ' flex gap-4 place-content-center md:flex-col text-white'>
+      {
+        dataTech.map((_,i)=>(
+          <div onClick={()=>{
+            gliderRef.current?.scrollItem(i)
+          }} className={`group  border-[.001rem] cursor-pointer grid place-content-center h-[2.5rem] w-[2.5rem] sm:h-[3.625rem] sm:w-[3.625rem] md:h-[5rem] md:w-[5rem] rounded-[50%] border-[#97979769] transition-colors duration-300 hover:bg-[#fff] ${techSliderIndex === i && 'bg-[#fff] text-[#000]'}`} key={i}>
+            <span className=' group-hover:text-dark-blue font-bellefair '>{i+1}</span>
+          </div>
+        ))
+      }
+    </div>
+  <div className='max-w-[30rem] basis-[100%]  mx-auto'>
+  <Glider className='glider-contain z-0 ' ref={gliderRef}  slidesToShow={1} draggable scrollToSlide={1} scrollToPage={1} scrollLock onSlideVisible={(i)=>{
+    dispatch(techScrollIndex(i.detail.slide))
+  }} >
+    {
+      dataTech.map((v,i)=>(
+        <div key={i} className=' flex flex-col text-center  md:text-left  mx-auto justify-content-between '>
+        <h4 className = ' font-barlow-condensed text-light-blue text-[0.875rem] sm:text-[1rem] md:text-[1rem]'>THE TERMINOLOGY…</h4>
+        <h1 className = 'text-[1.5rem] font-bellefair text-white sm:text-[2.5rem] md:text-[3.5rem]'>{v.name}</h1>
+        <p className=' text-[0.938rem] font-barlow-condensed text-light-blue sm:text-[1rem] md:text-[1.125rem]'>{v.description}</p>
+      </div>
+      ))
+    }
+  </Glider>
+  </div>
+  </div>
+</div>
+
+</div>
