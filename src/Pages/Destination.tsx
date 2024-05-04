@@ -3,22 +3,25 @@ import './page.css'
 import type { RootState } from '../Redux/Store'
 import { useDispatch, useSelector } from 'react-redux'
 import { mars , moon,europa,titan} from '../Redux/Slice'
+import { MouseEventHandler } from 'react'
+
 
 
 function Destination() {
   const {planetSelected,planetDescription,planetDistance,planetImage,planetName,planetTravel} = useSelector((state:RootState)=>state.slice)
   const dispatch = useDispatch()
 
-  const changePlanet = (e:unknown)=>{
-    if( (e.target as HTMLElement).innerHTML == 'Mars'){
+  const changePlanet:MouseEventHandler<HTMLElement> = (e)=>{
+    const targetElement = e.target as HTMLLIElement;
+    if( targetElement.innerHTML == 'Mars'){
       dispatch(mars())
-    }else if( (e.target as HTMLElement).innerHTML == 'Moon'){
+    }else if( targetElement.innerHTML == 'Moon'){
       dispatch(moon())
     }
-    else if( (e.target as HTMLElement).innerHTML == 'Titan'){
+    else if( targetElement.innerHTML == 'Titan'){
       dispatch(titan())
     }
-    else if( (e.target as HTMLElement).innerHTML == 'Europa'){
+    else if( targetElement.innerHTML == 'Europa'){
       dispatch(europa())
     }
   }
@@ -35,7 +38,7 @@ function Destination() {
           <ul className=' mb-[1rem] place-content-center text-light-blue font-barlow-condensed md:justify-start flex gap-[3rem] min-w-[100%]' >
             {
               dataPage.destinations.map((value,i)=>(
-                <li onClick={(e)=>{ changePlanet(e)}} className={`destination-btn ${planetSelected == i ? 'border-[#fff]' : 'border-[#0000]'}`} key={i}>{value.name}</li>
+                <li onClick={changePlanet} className={`destination-btn ${planetSelected == i ? 'border-[#fff]' : 'border-[#0000]'}`} key={i}>{value.name}</li>
               ))
             }
           </ul>

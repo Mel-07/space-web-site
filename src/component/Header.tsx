@@ -40,7 +40,7 @@ function Header() {
     const {menu} = useSelector((state:RootState)=>state.slice)
     const dispatch = useDispatch()
     useEffect(()=>{
-        const setMenu = (e) =>{
+        const setMenu = (e:MouseEvent) =>{
 
             if((e.target as HTMLElement).id === 'open'){
                 dispatch(handleMenu(true))
