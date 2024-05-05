@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL](https://space-web-site-seven.vercel.app/technology)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -135,7 +135,7 @@ export const slice  = createSlice({
 
 ## Author
 
-- Website - [okocha emeka chininso](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [okocha emeka chinonso](https://www.your-site.com)
+- Frontend Mentor - [@Mel-07](https://www.frontendmentor.io/profile/@Mel-07)
+- Twitter - [@Nuel_70](https://x.com/nuel_70)
 
