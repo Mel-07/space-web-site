@@ -26,8 +26,10 @@ function Technology() {
     }
     handleResize()
     window.addEventListener('resize',handleResize)
+    window.addEventListener('load',handleResize)
     return ()=>{
       window.removeEventListener('resize',handleResize)
+      window.removeEventListener('load',handleResize)
     }
   },[windowWidth])
   const dataTech = dataPage.technology
@@ -49,7 +51,7 @@ function Technology() {
   return (
     <div className=" grid bg-dark-blue  bg-cover bg-center bg-technology-image-mobile md:bg-technology-image-tablet lg:bg-technology-image-desktop min-h-[100dvh]">
       <div className=' grid' >
-      <div className='  p-2 text-white mx-auto lg:ml-[10rem] mt-[4rem] md:mt-[5rem] lg:mt-[8rem]'>
+      <div className='  p-2 text-white mx-auto md:mx-0 lg:ml-[10rem] mt-[4rem] md:mt-[5rem] lg:mt-[8rem]'>
             <h2 className ='text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] font-barlow-condensed'><span className=' text-light-blue mr-[.5rem]'>03</span> SPACE LAUNCH 101</h2>
           </div>
 
