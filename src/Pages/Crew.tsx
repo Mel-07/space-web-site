@@ -34,7 +34,7 @@ const gliderRef = useRef<GliderMethods>(null)
 
   const crewImage:CrewImage<string> = [Dou,Mark,Vic,Ano]
   return (
-    <div className="grid place-content-center bg-cover bg-center bg-crew-image-mobile md:bg-crew-image-tablet lg:bg-crew-image-desktop min-h-[100dvh]">
+    <div className="grid bg-dark-blue place-content-center bg-cover bg-center bg-crew-image-mobile md:bg-crew-image-tablet lg:bg-crew-image-desktop min-h-[100dvh]">
       <div  className=' grid' >
           <div className=' flex flex-col lg:flex-row max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto text-white'>
           <div className=' p-4 flex flex-col justify-around mx-auto  max-w-[40rem]'>

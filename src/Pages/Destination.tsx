@@ -26,7 +26,7 @@ function Destination() {
     }
   }
   return (
-    <div className="grid place-content-center bg-cover bg-center bg-destination-image-mobile md:bg-destination-image-tablet lg:bg-destination-image-desktop min-h-[100dvh]">
+    <div className="grid bg-dark-blue place-content-center bg-cover bg-center bg-destination-image-mobile md:bg-destination-image-tablet lg:bg-destination-image-desktop min-h-[100dvh]">
       <div className=' grid max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto lg:grid-cols-2 text-white'>
         {/* image */}
         <div className='p-4'>

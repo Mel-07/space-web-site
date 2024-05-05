@@ -2,7 +2,7 @@ import './page.css'
 
 function Home() {
   return (
-    <div className=" grid lg:items-center bg-cover bg-center bg-home-image-mobile md:bg-home-image-tablet lg:bg-home-image-desktop min-h-[100dvh]">
+    <div className=" grid bg-dark-blue lg:items-center bg-cover bg-center bg-home-image-mobile md:bg-home-image-tablet lg:bg-home-image-desktop min-h-[100dvh]">
       <div className=" flex mt-[7rem] lg:mt-[0] gap-y-[5rem] flex-col lg:grid lg:gap-5 lg:grid-cols-2 justify-center ">
         <div className='  p-2 text-center lg:text-left mx-auto max-w-[30rem]'>
           <h3 className=' font-barlow-condensed text-[1rem] md:text-[1.25rem] text-light-blue lg:text-[1.75rem]' >SO, YOU WANT TO TRAVEL TO</h3>
