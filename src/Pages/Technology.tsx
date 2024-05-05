@@ -72,7 +72,7 @@ function Technology() {
         ))
       }
     </div>
-  <div className='max-w-[20rem] md:max-w-[25rem] lg:max-w-[30rem] basis-[100%]  mx-auto'>
+  <div className='max-w-[20rem] pb-4 md:max-w-[25rem] lg:max-w-[30rem] basis-[100%]  mx-auto'>
   <Glider className='glider-contain z-0 ' ref={gliderRef}  slidesToShow={1} draggable scrollToSlide={1} scrollToPage={1} scrollLock onSlideVisible={(i)=>{
     dispatch(techScrollIndex(i.detail.slide))
   }} >
