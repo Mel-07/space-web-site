@@ -18,19 +18,19 @@ const headerPath:Paths<PathObject> = [
     },
     {
         id:2,
-        path:'destination',
+        path:'/destination',
         pathString:'DESTINATION',
         pathStringNumber:'01'
     },
     {
         id:3,
-        path:'crew',
+        path:'/crew',
         pathString:'CREW',
         pathStringNumber:'02'
     },
     {
         id:4,
-        path:'technology',
+        path:'/technology',
         pathString:'TECHNOLOGY',
         pathStringNumber:'03'
     },
