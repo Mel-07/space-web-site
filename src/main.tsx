@@ -21,22 +21,26 @@ const routes = createBrowserRouter ([
     element:<Suspense fallback={<Loading/>}>
     <App />
     </Suspense>,
-    errorElement:<div>Error</div>,
+    errorElement:<div className=' grid place-content-center'>
+      <div>
+        <h1 className=' font-bellefair text-[4rem]'>Error</h1>
+      </div>
+    </div>,
     children:[
       {
         index: true,
         element: <Home/>
       },
       {
-        path:'/destination',
+        path:'destination',
         element:<Destination/>
       },
       {
-        path:'/crew',
+        path:'crew',
         element:<Crew/>
       },
       {
-        path:'/technology',
+        path:'technology',
         element:<Technology/>
       },
 

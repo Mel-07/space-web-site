@@ -95,7 +95,7 @@ function Technology() {
         {
           // windowWidth >= 768 ?  <img className=' object-cover w-[100%] lg:w-[515px] lg:h-[527px]  ' loading='lazy' src={technologyImage[techSliderIndex].portrait_img} alt="" /> :<img className=' object-cover w-[100%] h-full ' loading='lazy' src={technologyImage[techSliderIndex].landScape_img} alt="" />
          <div className=' min-w-[100%]'>
-           <img className={`${windowWidth >= 764 ? ' object-cover w-[100%] lg:w-[515px] lg:h-[527px]' : 'object-cover min-w-[100%] h-full'}`} loading='lazy' src={windowWidth >= 764 ? technologyImage[techSliderIndex].portrait_img :technologyImage[techSliderIndex].landScape_img } alt="" />
+           <img className={`${windowWidth >= 1024 ? ' object-cover w-[100%] lg:w-[515px] lg:h-[527px]' : 'object-cover min-w-[100%] h-full'}`} loading='lazy' src={windowWidth >= 1024 ? technologyImage[techSliderIndex].portrait_img :technologyImage[techSliderIndex].landScape_img } alt="" />
          </div>
         }
         </div>
