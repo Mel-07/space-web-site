@@ -62,7 +62,7 @@ const gliderRef = useRef<GliderMethods>(null)
           </div>
         </div>
         {/* sec-two */}
-        <div className=' grid p-4  border-b border-[#383B4B] md:border-b-0  ' >
+        <div className=' grid px-4  border-b border-[#383B4B] md:border-b-0  ' >
           <img className=' object-fill  object-bottom mx-auto  lg:w-[35.504rem] lg:max-h-[30.4rem] md:w-[28.523rem] md:h-[35.75rem]  w-[11.07rem] h-[13.875rem]  ' src={crewImage[crewSliderIndex]} alt="" />
         </div>
             </section>
