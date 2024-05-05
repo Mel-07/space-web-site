@@ -36,11 +36,12 @@ const gliderRef = useRef<GliderMethods>(null)
   return (
     <div className="grid bg-dark-blue place-content-center bg-cover bg-center bg-crew-image-mobile md:bg-crew-image-tablet lg:bg-crew-image-desktop min-h-[100dvh]">
       <div  className=' grid' >
-          <div className=' flex flex-col lg:flex-row max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto text-white'>
-          <div className=' p-4 flex flex-col justify-around mx-auto  max-w-[40rem]'>
-          <div>
+          <div className='  md lg:flex-row max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto text-white'>
+            <div className=' p-4'>
             <h2 className =' text-center uppercase md:text-left mb-[3rem] text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] mx-auto font-barlow-condensed '><span className=' text-light-blue mr-[.5rem]'>02</span> Meet your crew</h2>
             </div>
+            <section className=' flex flex-col-reverse md:flex-col lg:flex-row'>
+            <div className=' p-4 flex flex-col-reverse md:flex-col justify-around mx-auto  max-w-[40rem]'>
             <Glider ref={gliderRef} className=' !z-[0] max-w-[20rem]  md:max-w-[40rem] glider-contain '   onSlideVisible={(i)=>{
               dispatch(crewScrollIndex(Number(i.detail.slide)))
             }} draggable hasDots dots={'#dot'}  scrollLock scrollToSlide={1} slidesToShow={1} scrollToPage={1} >
@@ -57,17 +58,14 @@ const gliderRef = useRef<GliderMethods>(null)
               }
 
             </Glider>
-            {/* style={{
-            justifyContent:windowWidth <= 768 ? 'center' :'right',
-            
-          }} */}
           <div id='dot' className=' !m-[1.5rem_auto] lg:!m-[1.5rem_0] !justify-normal '>
           </div>
         </div>
         {/* sec-two */}
-        <div className=' grid   ' >
-          <img className=' object-fill object-bottom mx-auto  lg:w-[35.504rem] lg:h-[39.4rem] md:w-[28.523rem] md:h-[35.75rem]  w-[11.07rem] h-[13.875rem]  ' src={crewImage[crewSliderIndex]} alt="" />
+        <div className=' grid p-4  border-b border-[#383B4B] md:border-b-0  ' >
+          <img className=' object-fill  object-bottom mx-auto  lg:w-[35.504rem] lg:max-h-[30.4rem] md:w-[28.523rem] md:h-[35.75rem]  w-[11.07rem] h-[13.875rem]  ' src={crewImage[crewSliderIndex]} alt="" />
         </div>
+            </section>
           </div>
       </div>
     </div>
