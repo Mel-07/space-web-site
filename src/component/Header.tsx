@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import { RootState } from "../Redux/Store"
 import { useSelector,useDispatch } from "react-redux"
 import { handleMenu } from "../Redux/Slice"
+import { Link } from "react-router-dom"
 import close_icon from '../assets/shared/icon-close.svg'
 import open_icon from '../assets/shared/icon-hamburger.svg'
 
@@ -74,7 +75,7 @@ function Header() {
   return (
     <header className="header z-30" >
         <div className="header-first-child">
-        <img className=' max-w-[2rem] mt-4 md:mt-0 max-h-[2rem] md:max-w-[3rem] self-center ml-[2rem] md:max-h-[3rem]' src={Logo} alt="Logo" />
+            <Link to= '/'>        <img className=' max-w-[2rem] mt-4 md:mt-0 max-h-[2rem] md:max-w-[3rem] self-center ml-[2rem] md:max-h-[3rem]' src={Logo} alt="Logo" /></Link>
         <img id="open" className=" md:hidden  mt-4 md:mt-0 self-center mr-[2rem]" src={open_icon} alt="" />
         <div id="container-menu" className={` header-line  z-[1] md:ml-[7rem] md:px-[4rem] py-[1.5rem] md:min-w-fit lg:w-[50rem]  backdrop-blur-[6px] fixed md:translate-x-0 w-[60%]  ${menu ? 'translate-x-[66.7%]': 'translate-x-[200%]'} bg-[#ffffff19] top-0 bottom-0 left-0 right-0  md:relative md:min-h-fit transition-transform duration-300 min-h-[100dvh]`}>
         <nav id ='container-nav' className=" flex flex-col gap-y-[4rem] min-w-[100%] md:mx-auto" >
