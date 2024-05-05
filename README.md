@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://space-web-site-seven.vercel.app/technology)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://space-web-site-seven.vercel.app/technology)
 
 ## My process
 I use vite-react, tailwind, redux-toolkit,lottie-react and react router dom 
