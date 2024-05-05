@@ -1,12 +1,12 @@
 .header{
-    @apply w-[100%] h-fit top-0  fixed md:top-[1rem] right-0 left-0 
+    @apply w-[100%] h-fit top-0  fixed lg:top-[1rem] right-0 left-0 
 }
 .header-first-child{
     @apply flex justify-between  
 }
 .header-list{
-    @apply min-w-[100%] pl-4 sm:pl-0  text-[1rem] transition-colors hover:border-[#D0D6F9] text-nowrap border-r-[.2rem] sm:border-r-0 sm:border-b-[.2rem] sm:py-[1.5rem]
+    @apply min-w-[100%] pl-4 md:pl-0  text-[1rem] transition-colors hover:border-[#D0D6F9] text-nowrap border-r-[.2rem] md:border-r-0 md:border-b-[.2rem] md:py-[1.5rem]
 }
 .header-line{
-    @apply before:hidden  before:md:block before:absolute before:left-[-75%]  before:content-[''] before:bg-[#ffffff31] before:top-[50%] before:h-[.005rem] before:z-[1] before:min-w-[80%]
+    @apply before:hidden  before:lg:block before:absolute before:left-[-75%]  before:content-[''] before:bg-[#ffffff31] before:top-[50%] before:h-[.005rem] before:z-[1] before:min-w-[80%]
 }

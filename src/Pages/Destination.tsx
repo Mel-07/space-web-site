@@ -26,16 +26,16 @@ function Destination() {
     }
   }
   return (
-    <div className="grid place-content-center bg-cover bg-center bg-destination-image-mobile sm:bg-destination-image-tablet md:bg-destination-image-desktop min-h-[100dvh]">
-      <div className=' grid max-w-[90rem] mt-[5rem] gap-[2rem] md:gap-[6rem] mx-auto md:grid-cols-2 text-white'>
+    <div className="grid place-content-center bg-cover bg-center bg-destination-image-mobile md:bg-destination-image-tablet lg:bg-destination-image-desktop min-h-[100dvh]">
+      <div className=' grid max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto lg:grid-cols-2 text-white'>
         {/* image */}
-        <div>
-          <h2 className =' font-barlow-condensed text-center text-[1rem] sm:text-[1.25rem] md:text-[1.75rem] md:text-left mb-[3rem] mx-auto'><span className=' text-light-blue mr-[.5rem]'>01</span> PICK YOUR DESTINATION</h2>
-          <img src={planetImage} className=' mx-auto w-[170px] h-[170px] md:w-[445px] md:h-[445px] sm:w-[300px] sm:h-[300px] ' alt="" />
+        <div className='p-4'>
+          <h2 className =' font-barlow-condensed text-center text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] lg:text-left mb-[3rem] mx-auto'><span className=' text-light-blue mr-[.5rem]'>01</span> PICK YOUR DESTINATION</h2>
+          <img src={planetImage} className=' mx-auto w-[170px] h-[170px] lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] ' alt="" />
         </div>
         {/*description/distance/travel  */}
         <div className=' self-center p-4' >
-          <ul className=' mb-[1rem] place-content-center text-light-blue font-barlow-condensed md:justify-start flex gap-[3rem] min-w-[100%]' >
+          <ul className=' mb-[1rem] place-content-center text-light-blue font-barlow-condensed lg:justify-start flex gap-[3rem] min-w-[100%]' >
             {
               dataPage.destinations.map((value,i)=>(
                 <li onClick={changePlanet} className={`destination-btn ${planetSelected == i ? 'border-[#fff]' : 'border-[#0000]'}`} key={i}>{value.name}</li>
@@ -44,11 +44,11 @@ function Destination() {
           </ul>
           {/* description */}
           <div className='mb-[3rem]  '>
-            <h1 className=' font-bellefair text-[56px] text-center md:text-left sm:text-[80px] md:text-[100px] md:ml-[.15rem]' >{planetName}</h1>
-            <p className='max-w-[30rem] text-light-blue font-barlow-condensed md:text-left text-center text-[.8rem] sm:text-[16px] '>{planetDescription}</p>
+            <h1 className=' font-bellefair text-[56px] text-center lg:text-left md:text-[80px] lg:text-[100px] lg:ml-[.15rem]' >{planetName}</h1>
+            <p className='max-w-[30rem] text-light-blue font-barlow-condensed lg:text-left text-center text-[.8rem] md:text-[16px] '>{planetDescription}</p>
           </div>
           {/* distance/travel */}
-          <div className='flex text-center flex-col sm:flex-row md:text-left justify-center md:justify-start gap-x-[4rem] gap-y-4 border-[#ffffff41] border-t pt-[2rem]'>
+          <div className='flex text-center flex-col md:flex-row lg:text-left justify-center lg:justify-start gap-x-[4rem] gap-y-4 border-[#ffffff41] border-t pt-[2rem]'>
             <div className=' distance-travel'><span className=' font-barlow-condensed'>AVG. DISTANCE</span><span className=' font-bellefair'>{planetDistance}</span></div>
             <div className=' distance-travel'><span className=' font-barlow-condensed'>Est. travel time</span><span className=' font-bellefair'>{planetTravel}</span></div>
           </div>
