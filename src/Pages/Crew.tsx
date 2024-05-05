@@ -39,7 +39,7 @@ const gliderRef = useRef<GliderMethods>(null)
           <div className=' flex flex-col lg:flex-row max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto text-white'>
           <div className=' p-4 flex flex-col justify-around mx-auto  max-w-[40rem]'>
           <div>
-            <h2 className =' text-center uppercase lg:text-left mb-[3rem] text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] mx-auto font-barlow-condensed '><span className=' text-light-blue mr-[.5rem]'>02</span> Meet your crew</h2>
+            <h2 className =' text-center uppercase md:text-left mb-[3rem] text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] mx-auto font-barlow-condensed '><span className=' text-light-blue mr-[.5rem]'>02</span> Meet your crew</h2>
             </div>
             <Glider ref={gliderRef} className=' !z-[0] max-w-[20rem]  md:max-w-[40rem] glider-contain '   onSlideVisible={(i)=>{
               dispatch(crewScrollIndex(Number(i.detail.slide)))

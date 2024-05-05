@@ -30,7 +30,7 @@ function Destination() {
       <div className=' grid max-w-[90rem] mt-[5rem] gap-[2rem] lg:gap-[6rem] mx-auto lg:grid-cols-2 text-white'>
         {/* image */}
         <div className='p-4'>
-          <h2 className =' font-barlow-condensed text-center text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] lg:text-left mb-[3rem] mx-auto'><span className=' text-light-blue mr-[.5rem]'>01</span> PICK YOUR DESTINATION</h2>
+          <h2 className =' font-barlow-condensed text-center text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] md:text-left mb-[3rem] mx-auto'><span className=' text-light-blue mr-[.5rem]'>01</span> PICK YOUR DESTINATION</h2>
           <img src={planetImage} className=' mx-auto w-[170px] h-[170px] lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] ' alt="" />
         </div>
         {/*description/distance/travel  */}
